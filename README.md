@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://getingeniousai.com">
+    <img src="https://raw.githubusercontent.com/Iceman2050/Iceman2050/main/assets/ingenious-ai-lockup.png" alt="Ingenious AI — AI security and agent-safety tooling" width="880">
+  </a>
+</p>
+
 # Ingenious AI
 
 **AI security and agent-safety tooling — built in Belize, shipped worldwide.**
