@@ -4,37 +4,63 @@
   </a>
 </p>
 
-# Ingenious AI
+# Aldo Guerra | Founder of Ingenious AI
 
-**AI security and agent-safety tooling — built in Belize, shipped worldwide.**
+I build practical security tools for AI agents, MCP integrations, developer infrastructure and software supply chains.
 
-We build scanners for the failures AI made cheap: vulnerable AI-generated code, lookalike phishing domains, undisclosed AI content, and AI agents running with more access than they should have. Every platform below runs a **free check** — run the scan first, decide after.
+I'm the founder and technical builder behind [**Ingenious AI**](https://getingeniousai.com/).
 
-## Platforms — free checks, live now
+My work focuses on turning emerging security problems into small, useful, reproducible tools that developers can actually run — zero-dependency where possible, honest about what a check can and cannot prove.
 
-- **[BreachHunter](https://breachhunter.getingeniousai.com)** — automated website security scanning. Finds the holes before someone else does.
-- **[DomainGuard](https://domainguard.getingeniousai.com)** — lookalike-domain defense. Spots typosquats, homoglyphs and phishing domains impersonating your brand.
-- **[DisclosureGuard](https://disclosureguard.getingeniousai.com)** — AI-disclosure compliance. Checks your site and content against EU AI Act transparency duties.
-- **[Agent Auth Gateway](https://authgateway.getingeniousai.com)** — spend caps and approval queues for AI agents that call APIs and move money.
+## What I'm working on
 
-More tools — Vibe-Audit (AI-code security), HomeShield MCP, AgentGate, WireWatch and the rest of the fleet — live at **[getingeniousai.com](https://getingeniousai.com)**.
+- **AI Agent Security** — Authorization, least privilege, action controls and evidence.
+- **MCP Security** — Server provenance, tool permissions, configuration auditing and trust.
+- **Software Supply Chain Security** — Package integrity, plugin verification and CI/CD protection.
+- **AI Security Testing** — Prompt injection, context boundaries, RAG poisoning and agent behavior.
+- **Security Automation** — Lightweight tools, CLI utilities and reusable GitHub Actions.
 
-## Open-source security CLIs
+## Start here
 
-Free, focused, single-purpose tools from this account — each one built for a real incident pattern:
+- **[mcp-permission-firewall](https://github.com/Iceman2050/mcp-permission-firewall)** — Audit and harden MCP server configs: least-privilege policies for AI agent tools, before you trust a pasted config.
+- **[cve-to-checker](https://github.com/Iceman2050/cve-to-checker)** — Turn vulnerability advisories into reusable "am I affected?" exposure-checker projects.
+- **[cve-2026-110447-checker](https://github.com/Iceman2050/cve-2026-110447-checker)** — A focused, passive Nextcloud exposure checker for CVE-2026-110447.
+- **[ghostaction-guard-action](https://github.com/Iceman2050/ghostaction-guard-action)** — A free GitHub Action that scans your workflows for GhostAction-style malicious CI injection.
+- **[plugin-provenance-verifier](https://github.com/Iceman2050/plugin-provenance-verifier)** — Audit where your Claude Code plugins actually came from — and catch silent drift.
+- **[history-tamper-guard](https://github.com/Iceman2050/history-tamper-guard)** — A user-side notary for agent conversation history: hash-chained turns, tamper detection.
+- **[api-key-sprawl-mapper](https://github.com/Iceman2050/api-key-sprawl-mapper)** — Maps API-key distribution across repositories without ever printing secret material.
+- **[saas-offboarding-checklist](https://github.com/Iceman2050/saas-offboarding-checklist)** — Ordered SaaS access-revocation runbooks for departing employees.
 
-- **[mcp-sbom-guard](https://github.com/Iceman2050/mcp-sbom-guard)** — verifies deployed MCP servers' SBOMs against known-vulnerable versions; fails CI (exit 2) on a hit.
-- **[clickfix-lure-scanner](https://github.com/Iceman2050/clickfix-lure-scanner)** — deterministic pre-click verdict on ClickFix lures: bing-redirect cloaking, clipboard-swap copy buttons, Run-dialog bait.
-- **[vibecode-scanner](https://github.com/Iceman2050/vibecode-scanner)** — "npm audit for AI-generated code": hardcoded keys, injection sinks and the unsafe patterns AI assistants reproduce most.
-- **[ai-disclosure-checker](https://github.com/Iceman2050/ai-disclosure-checker)** — heuristic scan for EU AI Act disclosure gaps: unidentified chatbots, unlabeled AI content, missing machine-readable disclosure.
-- **[ai-redteam-action](https://github.com/Iceman2050/ai-redteam-action)** — a GitHub Action that red-teams your system prompt in CI with a 15-probe prompt-injection battery.
-- **[header-hunter](https://github.com/Iceman2050/header-hunter)** — scans HTTP response headers for AI-agent-directed signals and indirect prompt-injection attempts.
-- **[skillguard-registry](https://github.com/Iceman2050/skillguard-registry)** — a public, verifiable safety registry for AI agent skills: scan, grade, publish.
-- **[homelab-security-score](https://github.com/Iceman2050/homelab-security-score)** — point it at your homelab configs, get a security score with concrete fixes.
+The full open-source estate — every tool, one registry-verified directory:
+**[Ingenious AI — All Links](https://ingeniousai-security-checks-mirror-0e97b6.gitlab.io/all-links.html)**
 
-That's the short list — 100+ more focused tools are in the repositories tab.
+## The hosted platforms
 
-## Work with us
+The free tools solve one problem at a time. The Ingenious AI platforms solve the recurring, operational version of the same problems — continuous control, evidence and monitoring:
 
-- Portfolio: **[getingeniousai.com/portfolio](https://getingeniousai.com/portfolio)**
-- Contact: **orders@getingeniousai.com**
+- **[Agent Auth Gateway](https://authgateway.getingeniousai.com)** — spend caps, allow/deny policies and approval queues for AI agents.
+- **[Agent Flight Recorder](https://flightrecorder.getingeniousai.com)** — hash-chained, tamper-evident records of agent actions.
+- **[BreachHunter](https://breachhunter.getingeniousai.com)** — automated website security scanning; the free front door.
+- **[DomainGuard](https://domainguard.getingeniousai.com)** — lookalike-domain and phishing-impersonation defense.
+
+## Engineering principles
+
+- Prefer simple, understandable implementations.
+- Minimize unnecessary dependencies.
+- Make security limitations explicit.
+- Provide reproducible examples and test results.
+- Respect privacy and minimize data collection.
+- Document authorized-use requirements.
+- Never claim a security check proves more than it actually verifies.
+
+## Get involved
+
+- Website: [https://getingeniousai.com/](https://getingeniousai.com/)
+- Portfolio: [https://getingeniousai.com/portfolio](https://getingeniousai.com/portfolio)
+- GitHub: [https://github.com/Iceman2050](https://github.com/Iceman2050)
+- Company organization: [https://github.com/getingeniousai](https://github.com/getingeniousai)
+- Contact: orders@getingeniousai.com
+
+Issues, technical feedback and constructive contributions are welcome.
+
+*Building useful security infrastructure, one practical tool at a time.*
