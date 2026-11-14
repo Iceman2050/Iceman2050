@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Aldo Guerra | Founder of Ingenious AI
+# Ingenious AI — Founder-Led Open-Source Security Engineering
 
 I build practical security tools for AI agents, MCP integrations, developer infrastructure and software supply chains.
 
@@ -33,6 +33,40 @@ My work focuses on turning emerging security problems into small, useful, reprod
 
 The full open-source estate — every tool, one registry-verified directory:
 **[Ingenious AI — All Links](https://ingeniousai-security-checks-mirror-0e97b6.gitlab.io/all-links.html)**
+
+## Run a tool in 60 seconds
+
+Every checker here is a standalone, zero-dependency tool — no platform account, no install beyond Python 3:
+
+```bash
+git clone https://github.com/Iceman2050/cve-to-checker
+cd cve-to-checker
+python3 checker.py --help   # each repo's README carries its own exact commands and sample output
+```
+
+## How to read a result
+
+Every Ingenious AI checker reports in the same four verdicts:
+
+- **Confirmed** — the check found direct evidence of the issue.
+- **Possible** — signals point to the issue, but the evidence is not conclusive.
+- **Not detected** — the check ran and did not find the issue in what it could observe. **Not detected is not the same as safe** — it means this check, on this surface, found nothing.
+- **Inconclusive** — the target could not be reached or fully observed, so no verdict is claimed.
+
+Sample output (from a CVE exposure checker):
+
+```text
+Target: https://example.com
+Check:  CVE-2026-110447 exposure
+Result: NOT DETECTED — no exposure signature observed in the responses checked.
+        This is not proof the target is safe; it covers only the paths this checker tests.
+```
+
+## Limitations & authorized use
+
+- These are passive, defensive checks. A checker verifies only the specific vulnerability, configuration or behaviour named in its README — never the overall security of a system.
+- Run them only against systems you own or are explicitly authorized to test.
+- Security policy for every repo in this account: see [SECURITY.md via the account defaults](https://github.com/Iceman2050/.github/blob/main/SECURITY.md).
 
 ## The hosted platforms
 
